@@ -1,0 +1,70 @@
+{
+  "title": "From content to delivery",
+  "font": "PingFang SC",
+  "slides": [
+    {
+      "layout": "cover",
+      "title": "From content to delivery",
+      "body": "可编辑内容 · 清晰表达 · 原生验收\nA practical workflow for reliable files",
+      "notes": "Synthetic demonstration; no empirical claims."
+    },
+    {
+      "layout": "process",
+      "title": "Three checks answer different questions",
+      "items": [
+        {
+          "title": "Structure",
+          "body": "Can the package and its references be read?"
+        },
+        {
+          "title": "Native opening",
+          "body": "Does the target application accept the final file?"
+        },
+        {
+          "title": "Visual review",
+          "body": "Can a reader see and understand every element?"
+        }
+      ],
+      "source": "Illustrative workflow / 示例流程"
+    },
+    {
+      "layout": "comparison",
+      "title": "Separate the slide from the explanation",
+      "items": [
+        {
+          "title": "On the slide",
+          "body": "核心结论\nEssential evidence\nA clear reading order"
+        },
+        {
+          "title": "In the notes",
+          "body": "讲解细节\nExamples and context\nSupporting discussion"
+        }
+      ],
+      "notes": "Check speaker notes separately from the exported PDF."
+    },
+    {
+      "layout": "chart",
+      "title": "Retain editable chart data",
+      "categories": [
+        "A",
+        "B",
+        "C"
+      ],
+      "values": [
+        12,
+        18,
+        24
+      ],
+      "series": "Example values",
+      "unit": "Synthetic units",
+      "source": "Synthetic values for software testing; not research evidence.",
+      "notes": "Expected data: A=12, B=18, C=24."
+    },
+    {
+      "layout": "content",
+      "title": "Deliver the version that was checked",
+      "body": "核对最终文件的内容与身份。\nOpen the final path in the target application.\nReview all exported pages or slides.",
+      "source": "No external research claims."
+    }
+  ]
+}

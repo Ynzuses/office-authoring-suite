@@ -1,0 +1,25 @@
+Office Authoring Suite
+
+Copyright 2026 Ynzuses
+Apache-2.0 distribution. Component attribution and permission notices remain applicable.
+
+office-authoring-suite
+Copyright 2026 Ynzuses
+
+Licensed under the Apache License, Version 2.0.
+Third-party dependencies retain their respective licenses.
+
+Original MIT notices received with the Office components are retained in
+LICENSES/Office-Authoring-MIT.txt and LICENSES/Excel-Authoring-MIT.txt.
+The three synthetic PNG examples remain available under their original MIT
+license, as recorded in powerpoint-authoring/examples/illustrated.json.
+
+Originating pre-stable Research Skills Suite notice (retained):
+
+Research Skills Suite
+
+Copyright 2026 Research Skills Suite contributors
+
+The research-method instructions are an original synthesis of recurring research practice. Platform structure follows public OpenAI Codex and Agent Skills specifications. Public Skill repositories listed in PROVENANCE.md were reviewed for abstract product patterns; their text, assets, and code are not incorporated here.
+
+The suite intentionally excludes private research data, project-specific facts, local infrastructure details, personal identifiers, and verbatim supervisor or reviewer material.

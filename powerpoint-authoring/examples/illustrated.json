@@ -1,0 +1,61 @@
+{
+  "title": "Illustrated layout example",
+  "style": "plain",
+  "font": "Arial",
+  "assets": {
+    "signal": {
+      "path": "assets/synthetic-signal.png",
+      "kind": "figure",
+      "credit": "Original synthetic signal illustration",
+      "license": "MIT",
+      "alt": "An illustrative rising signal, without measured values"
+    },
+    "circle": {
+      "path": "assets/circle.png",
+      "kind": "icon",
+      "credit": "Original circle icon",
+      "license": "MIT"
+    },
+    "triangle": {
+      "path": "assets/triangle.png",
+      "kind": "icon",
+      "credit": "Original triangle icon",
+      "license": "MIT"
+    }
+  },
+  "slides": [
+    {
+      "layout": "image",
+      "title": "An illustration supports one explanation",
+      "image": "signal",
+      "caption": "Illustrative trend; no measurements or units are implied.",
+      "body": "The figure provides a visual anchor.\n\nThe editable text states what the audience should notice.",
+      "source": "Source: original synthetic teaching example.",
+      "notes": "Do not describe the illustration as observed data."
+    },
+    {
+      "layout": "comparison",
+      "title": "Icons help readers locate two alternatives",
+      "items": [
+        {
+          "title": "Observe",
+          "body": "Use a compact symbol to label a short point.",
+          "image": "circle"
+        },
+        {
+          "title": "Review",
+          "body": "Keep the explanation separate from the icon.",
+          "image": "triangle"
+        }
+      ],
+      "notes": "These icons carry no scientific evidence."
+    },
+    {
+      "layout": "content",
+      "title": "Some slides work well without images",
+      "body": "Use a concise explanation when a picture would add no useful information.",
+      "source": "Synthetic example.",
+      "notes": "There is no picture quota."
+    }
+  ]
+}

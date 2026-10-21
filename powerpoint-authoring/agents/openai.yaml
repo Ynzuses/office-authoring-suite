@@ -1,0 +1,6 @@
+interface:
+  display_name: "PowerPoint Authoring"
+  short_description: "Build editable slides with cited images and native checks"
+  default_prompt: "Use $powerpoint-authoring to create or revise an editable PowerPoint presentation within the requested scope, balance visible evidence and speaking notes, and verify the final file."
+policy:
+  allow_implicit_invocation: true

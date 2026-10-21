@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "id": "office-authoring-suite",
+  "version": "1.0.0",
+  "skills": [
+    "word-authoring",
+    "powerpoint-authoring",
+    "excel-authoring",
+    "research-document-delivery"
+  ],
+  "optional_groups": [
+    "research-skills-suite",
+    "workspace-skills-suite",
+    "voice-preserving-writing"
+  ],
+  "required_member_dependencies": {
+    "powerpoint-authoring": [
+      "word-authoring"
+    ]
+  },
+  "license": "Apache-2.0",
+  "owner": "Ynzuses"
+}

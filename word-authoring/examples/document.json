@@ -1,0 +1,65 @@
+{
+  "title": "Clear documents, reliable delivery",
+  "subtitle": "中英文兼容性示例 · Editable Word example",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "1. Define the message"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        {
+          "text": "A document should preserve "
+        },
+        {
+          "text": "meaning and structure",
+          "bold": true
+        },
+        {
+          "text": " when it becomes a Word file. 中文内容、英文术语与数字 12.5 均应完整保留。"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Stage / 阶段",
+        "Question / 核对问题"
+      ],
+      "rows": [
+        [
+          "Content",
+          "Is the intended meaning complete?"
+        ],
+        [
+          "Native opening",
+          "Does Word open the exact final file normally?"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use actual heading and list styles.",
+        "Review every exported page."
+      ]
+    },
+    {
+      "type": "page_break"
+    },
+    {
+      "type": "heading",
+      "text": "2. Check the final file"
+    },
+    {
+      "type": "paragraph",
+      "text": "结构检查、原生打开和页面检查提供不同证据。Passing one check does not establish the others."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is synthetic test content. It contains no course material or research findings."
+    }
+  ]
+}

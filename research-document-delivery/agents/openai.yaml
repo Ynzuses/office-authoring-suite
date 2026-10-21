@@ -1,0 +1,6 @@
+interface:
+  display_name: "Document Delivery"
+  short_description: "Safely revise and verify Word, Markdown, and PDF files"
+  default_prompt: "Use $research-document-delivery to revise, synchronize, clean, and verify these documents while preserving structure and a recoverable baseline."
+policy:
+  allow_implicit_invocation: true
