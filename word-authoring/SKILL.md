@@ -3,7 +3,7 @@ name: word-authoring
 description: "Create editable Word DOCX documents from approved text or structured content, with semantic styles, bilingual typography, package checks, and native Word acceptance. Use for new reports, letters, handouts, or Markdown-to-Word delivery. Compose with research-document-delivery for complex revisions, comments, tracked changes or frozen submissions. Do not use for prose-only answers or courseware explanation."
 license: Apache-2.0
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Word authoring

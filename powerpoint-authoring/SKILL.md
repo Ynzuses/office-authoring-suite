@@ -3,7 +3,7 @@ name: powerpoint-authoring
 description: "Create or revise editable PowerPoint PPTX presentations with content-led layouts, relevant cited images and native acceptance. Use for academic/professional decks and image, alignment or crowded-slide corrections. Not for prose outlines without a PPTX request or complex template migration."
 license: Apache-2.0
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # PowerPoint authoring

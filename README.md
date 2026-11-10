@@ -15,13 +15,14 @@ For editable Word, PowerPoint, and Excel work, plus complex document revisions t
 
 ## Install with skills.sh
 
-After the `v1.0.0` tag is published, run this from the project where you want to use the group:
+Run this from the project where you want to use the group:
 
 ```sh
-npx skills@1.7.4 add https://github.com/Ynzuses/office-authoring-suite/tree/v1.0.0 --skill "*" --agent codex
+npx skills@1.7.4 add https://github.com/Ynzuses/office-authoring-suite/tree/v1.0.1 --skill "*" --agent codex
+npx skills@1.7.4 add https://github.com/Ynzuses/office-authoring-suite/tree/v1.0.1 --skill "*" --agent claude-code
 ```
 
-This selects every member for Codex and defaults to the current project. Add `--list` to inspect available members or `--global` for user-wide installation. Use `--skill <skill-name>` to select one member, or choose another supported target such as `--agent claude-code`. Keep the first installation interactive so you can review its destination. Use `--copy` if symbolic links are unavailable.
+Each line selects every member for one agent (Codex or Claude Code) and defaults to the current project. Add `--list` to inspect available members or `--global` for user-wide installation. Use `--skill <skill-name>` to select one member, or choose another supported target such as `--agent claude-code`. Keep the first installation interactive so you can review its destination. Use `--copy` if symbolic links are unavailable.
 
 See **[INSTALL.md](INSTALL.md)** for prerequisites, pinned versions, individual installation, discovery paths, dependencies, updates, and removal. Verify discovery and an actual invocation in the target agent after installing the files.
 
@@ -31,7 +32,7 @@ See **[INSTALL.md](INSTALL.md)** for prerequisites, pinned versions, individual 
 
 > Use $excel-authoring to inspect this workbook and the available calculation engine, make the requested edits, and check formulas and preserved content.
 
-These are requests to an agent. Codex supports explicit `$skill-name` invocation; other agents use their own invocation interface.
+These are requests to an agent. Codex supports explicit `$skill-name` invocation; Claude Code invokes a Skill by name through its Skill tool or `/skill-name`; other agents use their own invocation interface.
 
 ## Requirements and scope
 

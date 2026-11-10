@@ -2,7 +2,7 @@
 name: research-document-delivery
 description: "Safely revise, synchronize, clean, render, freeze, and verify Word, Markdown, and PDF deliverables. Use for rich existing documents, comments or tracked changes, OpenXML preservation, cross-format parity, submitted baselines, or final-file validation. Compose with writing or domain methods for content decisions. Do not use for prose-only drafting, citation lookup, routine new-document creation, or ordinary Markdown editing."
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Document Delivery

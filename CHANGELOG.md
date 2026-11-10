@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2026-11-11
+
+Installation and invocation guidance now covers Claude Code (`--agent claude-code`, invocation by name) alongside Codex, and fixed-tag links, the installer pin and asset names refer to v1.0.1. Fixed the PowerPoint export check's PDF page count on systems whose `pdfinfo` prints metadata in a non-UTF-8 code page (for example a Chinese-locale Windows time-zone name): output is now read as bytes and decoded leniently, so the check no longer fails with a decoding error; a regression test covers it. No other instruction, script, schema or interface change.
+
 ## 1.0.0 - 2026-10-20
 
 First stable Office Authoring Suite group; 4 declared members. See MIGRATION.md and RELEASE_NOTES.md.

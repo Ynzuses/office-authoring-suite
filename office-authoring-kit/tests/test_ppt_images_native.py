@@ -102,6 +102,16 @@ class ImageAndNativeTests(unittest.TestCase):
         image = next(s for s in Presentation(p).slides[0].shapes if s.shape_type == 13)
         self.assertEqual(image.image.blob,(self.base/'assets/synthetic-signal.png').read_bytes())
 
+    def test_page_count_survives_non_utf8_pdfinfo_metadata(self):
+        p=self.path/'proof.pdf';p.write_bytes(b'%PDF-1.4\nsynthetic\n%%EOF')
+        # Metadata in a legacy code page (here GBK bytes) must not break parsing.
+        output=b'CreationDate:    Wed Nov 11 2026 \xc2\xed\xc0\xb4\r\nPages:           3\r\n'
+        done=subprocess.CompletedProcess(['pdfinfo',str(p)],0,stdout=output,stderr=b'')
+        with patch.object(native.subprocess,'run',return_value=done) as run:
+            self.assertTrue(native.complete_pdf(p,3))
+            self.assertFalse(native.complete_pdf(p,2))
+        self.assertNotIn('text',run.call_args.kwargs)
+
     @unittest.skipUnless(shutil.which('pdfinfo'), 'Poppler not installed')
     def test_partial_invalid_and_wrong_page_count_pdfs_do_not_pass(self):
         p=self.path/'proof.pdf';im=Image.new('RGB',(50,50),'white')

@@ -124,10 +124,14 @@ def complete_pdf(path, expected_pages):
     data = path.read_bytes()
     if not data.startswith(b'%PDF-') or not data.rstrip().endswith(b'%%EOF'):
         return False
-    run = subprocess.run(['pdfinfo', str(path)], capture_output=True, text=True, timeout=8)
+    # Read bytes: pdfinfo prints metadata such as time-zone names in the system
+    # code page, which a strict UTF-8 text decode rejects. Only the ASCII
+    # "Pages:" line is used, so undecodable metadata bytes are replaced.
+    run = subprocess.run(['pdfinfo', str(path)], capture_output=True, timeout=8)
     if run.returncode:
         return False
-    counts = [line.split()[-1] for line in run.stdout.splitlines() if line.startswith('Pages:')]
+    output = run.stdout.decode('utf-8', errors='replace')
+    counts = [line.split()[-1] for line in output.splitlines() if line.startswith('Pages:')]
     return counts == [str(expected_pages)]
 
 

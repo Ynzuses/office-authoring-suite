@@ -3,7 +3,7 @@ name: excel-authoring
 description: "Create, edit, analyze, and verify local Excel workbook files, or make targeted changes in an open Microsoft Excel workbook through an advertised connected session. Route cloud spreadsheets to their connector."
 license: Apache-2.0
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Excel authoring
